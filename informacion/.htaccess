@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine %{REQUEST_URI} ^ http://www.eusalud.com/informacion
+     RewriteRule ^ /var/portal/informacion/public/index.php [L]
+</IfModule>

@@ -1,0 +1,232 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7/04/2015, 07:29:57 AM
+    Author     : PABLO
+*/
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+
+.contenido, .container-fluid {
+    margin-top: 40px;
+}
+
+.footer {
+    margin-top: 100px;
+}
+
+.no_border {
+    width: auto;
+    padding: 30px !important;
+}
+
+.green {
+    font-size:1.2em;
+    border-radius: 20px;
+}
+
+.green th{
+    color: #fff;
+    text-align:center;
+    background-color: #1E7F74 !important;
+}
+
+.green tr{text-align: center;}
+
+.green > tbody > tr:nth-of-type(odd){
+    background-color: #e7e7e7 !important;
+
+}
+
+.logo-eusalud {
+    margin-left: 20px;
+}
+
+.footer p{
+    text-align: center; 
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar {
+    margin: 0 !important;
+}
+
+.navbar-wrapper {
+    position: relative !important; 
+}
+
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.navbar-inverse {
+    background-color: rgba(0,139,133,0.5);
+    border-color: #080808;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+    color: #fff;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: rgba(255,109,58,0.5);
+}
+
+.navbar-inverse .navbar-brand {
+    color: rgb(255,255,255);
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+    width: auto;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    height: 500px;
+    margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    height: 500px;
+    background-color: #777;
+}
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+}
+
+.carousel-control.left {
+    background-image: -webkit-linear-gradient(left,color-stop(rgba(0,0,0,0.3) 0),color-stop(rgba(0,0,0,0.0001) 100%));
+    background-image: linear-gradient(to right,rgba(0,0,0,0.3) 0,rgba(0,0,0,0.0001) 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000',endColorstr='#00000000',GradientType=1);
+}
+
+.carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left,color-stop(rgba(0,0,0,0.0001) 0),color-stop(rgba(0,0,0,0.3) 100%));
+    background-image: linear-gradient(to right,rgba(0,0,0,0.0001) 0,rgba(0,0,0,0.3) 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='#80000000',GradientType=1);
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: normal;
+}
+.marketing .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
+}
+
+/*
+ * Forms
+ ***************************************************/
+
+label.error {
+    color:red
+}
+
+.form-control .error {
+    border-color:rgb(225,3,3) !important;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(225,3,3,0.6);
+    box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(225,3,3,0.6);
+}
