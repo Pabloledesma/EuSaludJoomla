@@ -26,9 +26,9 @@ class plgContentbtn_intranet extends JPlugin
 		} else {
 		    $ip = $_SERVER['REMOTE_ADDR'];
 		}
-		var_dump($ip);
+		//var_dump($ip);
 		//Si la ip es local, cambia la url del botón
-		if( stripos($ip, '192.168.0') != false || $ip === '127.0.0.1' ){
+		if( $ip === '190.145.10.194' || $ip === '127.0.0.1' ){
 			$url = 'http://eusalud.app/auth/login';
 		} else {
 			$url = 'http://190.145.10.194/auth/login';
